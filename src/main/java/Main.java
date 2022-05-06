@@ -1,7 +1,6 @@
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 
-
 import java.io.IOException;
 
 import static io.restassured.RestAssured.given;
@@ -20,6 +19,5 @@ public class Main {
             System.out.println("Тест успешен");
         }
     }
-
 
 }
