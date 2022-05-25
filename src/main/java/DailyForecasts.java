@@ -21,15 +21,15 @@ public class DailyForecasts {
     @JsonProperty(value = "Temperature")
     private Temperature temperature;
     @JsonProperty(value = "Day")
-    private Temperature day;
+    private Day day;
     @JsonProperty(value = "Night")
-    private Temperature night;
+    private Night night;
     @JsonProperty(value = "Sources")
     private List<String> sources;
     @JsonProperty(value = "MobileLink")
-    private Temperature mobeLink;
+    private String mobileLink;
     @JsonProperty(value = "Link")
-    private List<String> link;
+    private String link;
 
     @JsonIgnore
     private String dayData;

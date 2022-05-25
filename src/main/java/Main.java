@@ -39,7 +39,7 @@ public class Main {
         }
 
         for (DailyForecasts dailyForecast : dailyForecasts) {
-            System.out.println("В Санкт-Петербурге " + dailyForecast.getDate() + " максимальная температура " +
+            System.out.println("В Чите " + dailyForecast.getDate() + " максимальная температура " +
                     dailyForecast.getTemperature().getMaximum().getValue() + " минимальная температура " +
                     dailyForecast.getTemperature().getMinimum().getValue());
         }
