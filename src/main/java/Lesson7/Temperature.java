@@ -1,3 +1,5 @@
+package Lesson7;
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -9,13 +11,12 @@ import lombok.Setter;
 @Getter
 @Setter
 
-public class Maximum {
+public class Temperature {
 
-    @JsonProperty(value = "Value")
-    private String value;
-    @JsonProperty(value = "Unit")
-    private String unit;
-    @JsonProperty(value = "UnitType")
-    private String unitType;
+    @JsonProperty(value = "Lesson7.Minimum")
+    private Minimum minimum;
+    @JsonProperty(value = "Lesson7.Maximum")
+    private Maximum maximum;
+
 
 }

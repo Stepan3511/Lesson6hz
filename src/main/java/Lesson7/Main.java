@@ -1,8 +1,8 @@
+package Lesson7;
+
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.restassured.RestAssured;
-import io.restassured.mapper.ObjectMapperDeserializationContext;
-import io.restassured.mapper.ObjectMapperSerializationContext;
 import io.restassured.response.Response;
 
 import java.io.IOException;
@@ -27,7 +27,7 @@ public class Main {
 
         JsonNode jsonNode = objectMapper
                 .readTree(response.asPrettyString())
-                .at("/DailyForecasts");
+                .at("/Lesson7.DailyForecasts");
 
         List<DailyForecasts> dailyForecasts = new ArrayList<>();
 

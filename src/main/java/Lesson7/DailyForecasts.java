@@ -1,3 +1,5 @@
+package Lesson7;
+
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
@@ -18,11 +20,11 @@ public class DailyForecasts {
     private String date;
     @JsonProperty(value = "EpochDate")
     private String epochDate;
-    @JsonProperty(value = "Temperature")
+    @JsonProperty(value = "Lesson7.Temperature")
     private Temperature temperature;
-    @JsonProperty(value = "Day")
+    @JsonProperty(value = "Lesson7.Day")
     private Day day;
-    @JsonProperty(value = "Night")
+    @JsonProperty(value = "Lesson7.Night")
     private Night night;
     @JsonProperty(value = "Sources")
     private List<String> sources;
